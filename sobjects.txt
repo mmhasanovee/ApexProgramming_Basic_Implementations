@@ -1,0 +1,24 @@
+public class Maria {
+    
+    public static void hasan(){
+        
+        List<Sobject> obj = new List<Sobject>();
+        Account acc1 = new Account(Name='MyFirstAccount');
+        Opportunity op1 = new Opportunity(Name='GoldenOP');
+        Case cs1 = new Case(Status='New',Origin='Phone');
+        //add the records to the lsit
+        //lsit of Sobject
+        obj.add(acc1);
+        obj.add(op1);
+        obj.add(cs1);
+        System.debug('List of elements: '+obj);
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+}

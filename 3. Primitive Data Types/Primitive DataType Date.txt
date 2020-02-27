@@ -1,0 +1,27 @@
+public class Mars {
+    
+    public static void mar(){
+        
+
+		integer p=545,x=855;
+        decimal r=5.4;
+        
+        Date newDate =Date.newInstance(2016, 7, 15);
+        Date xDate = Date.today();
+        Date yDate=xDate.addYears(10);
+        Date zDate=xDate.addMonths(12);
+        
+        Date date1=Date.newInstance(2019, 1, 1);
+        Date date2=Date.newInstance(2019, 1, 30);
+        Integer diffDays=date1.daysBetween(date2);
+        
+        Date todayDate=Date.today();
+        
+        Boolean isLeapYear=Date.isLeapYear(todayDate.year());
+        
+        System.debug('Leap year?'+isLeapYear);
+        
+        //System.debug(todayDate.month());
+    }
+
+}

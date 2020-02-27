@@ -1,0 +1,58 @@
+public class Maria {
+    
+    public static void hasan(){
+        
+        
+        List<String> obj = new List<String>();
+        obj.add('Maria Potter');
+        obj.add('Ovee Potter');
+        obj.add('Hasan Potter');
+        
+        //System.debug('Friends: '+obj);
+        
+        obj.add(0,'OnM'); //Moves the other to right position, not replaced
+        obj.add(1,'Mehedi'); // Moves to right....
+        //System.debug('Afted adding new: '+obj);
+        
+        obj.remove(0);
+        // System.debug(obj);]]
+        //  System.debug(obj.size());
+        
+        Integer [] mylist = new  List<Integer>{1,2,30};
+            // System.debug(mylist);
+            myList.set(0,22); //replaces value
+        myList[0]=69; //same as set method
+        // System.debug(mylist);
+        Integer num = myList.get(0);
+        //System.debug(num);
+        mylist.sort();
+        obj.sort();
+        //System.debug(mylist);
+        //System.debug(obj);
+        
+        Set<String> hset=new Set<String>();
+        hset.add('Apple');
+        hset.add('Ovee');
+        hset.add('Apple');
+        hset.add('Random');
+        
+        //System.debug(hset);
+        hset.clear();//clears all the elements
+        
+        Map<String, String> myString = new Map<String,STring>{'a'=>'Ovee','b'=>'Maria'};
+            
+            System.debug(myString);
+        System.debug(myString.get('a'));
+        
+        myString.put('ab','Riu');
+        System.debug(myString+' '+myString.size());
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+}

@@ -1,0 +1,82 @@
+public class Maria {
+    
+    public static void hasan(){
+        
+        
+       // System.debug('Trying to insert');
+        
+        try{
+            Lead l = new Lead(LastName='Hasan'
+                             ,Company='Quadfe');
+        insert l;
+            
+        }
+        catch(DMLException e){
+            //System.debug(e.getMessage());
+        }
+        
+        String x;
+        //Boolean y = x.contains('lol'); //NULLPointer..
+        //System.debug(x);
+        
+        try{
+            
+            List<Lead> ln = [select Name from Lead
+                        where Name like 'hasan%'];
+          // system.debug(ln.size());
+            
+           Lead l =[select Name from Lead where Name
+                    like 'xyz%' limit 1];
+        }  
+        
+        catch(QueryException e){
+            
+            //System.debug(e.getMessage());
+        }
+        
+        try{
+            Account acx = new Account(Name='OnM');
+          // Account qry=[select Name from Account where Id=: acx.ID];
+        	//String des = qry.Description;
+        }
+        catch(Exception e){
+            
+            System.debug('Exception occured: '+e.getMessage());
+            System.debug('Cause: '+e.getCause());
+            System.debug('Line Number: '+e.getLineNumber());
+            System.debug('Stack trace: '+e.getStackTraceString());
+            
+        }
+        
+        Account g1 = new Account(Name='coffeemaker',Description='Kitchen');
+        Account g2 = new Account(Name='Biscuit',Description='You can make toast biscuits haha');
+        Account g3 = new Account();
+        Account [] aList = new List<Account>();
+        aList.add(g1);
+        aList.add(g2);
+        aList.add(g3);
+        
+        try{
+            insert aList;
+            
+        }
+        
+        catch(DMLException de){
+            
+            Integer  numOfErrors = de.getNumDml();
+            System.debug(numOfErrors);
+            
+            for(integer i=0;i<numOfErrors;i++ ){
+                
+                System.debug('getDmlFieldsNames='+ de.getDmlFieldNames(i));
+                System.debug('getDmMessage='+ de.getDmlMessage(i));
+
+            }
+        }
+        
+         
+        
+        
+    }
+    
+}

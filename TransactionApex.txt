@@ -1,0 +1,18 @@
+public class ApexTransaction {
+    
+    public static void insertLead(String accName,String
+                                  leadName,String com){
+                                      
+                                      Account a = new Account(Name=accName);
+                                      insert a;
+                                      Lead l1 = new Lead(LastName=leadName,
+                                                        Company=com);
+                                      insert l1;
+                                      Lead l2 = new Lead(LastName=leadName,
+                                                        Company='Quadfe');
+                                      
+                                      insert l2;
+                                      
+                                  }
+
+}

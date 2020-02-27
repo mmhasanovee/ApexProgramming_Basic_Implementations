@@ -1,0 +1,22 @@
+public class Mars {
+    
+    public static void mar(){
+        
+
+		Datetime myDateTime=Datetime.newInstance(2019,7,15,5,22,4);
+        String myDateString = myDateTime.format();
+        System.debug(myDateTime);
+        System.debug(myDateString);//formats local time zone
+        myDateTime.addHours(2);
+        Datetime myDatetime3=myDateTime.addDays(10);
+        System.debug(myDateTime3);
+        //.addMonths
+        //.addYears
+        Date onlyDate=myDateTime3.date();
+        System.debug(onlyDate);
+        String formateDate= myDateTime.format();
+        System.debug(formateDate);
+  		
+    }
+
+}

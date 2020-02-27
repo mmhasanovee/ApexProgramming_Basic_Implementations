@@ -1,0 +1,18 @@
+@isTest
+public class TempConverterTest {
+    
+    @isTest static void testWarmTemp(){
+        
+        Decimal celsius =TempConverter.FtoCelsius(70);
+        
+        System.assertEquals(21.11, celsius);
+    }
+    
+    @isTest static void testFreezingPoint(){
+        
+        Decimal celsius =TempConverter.FtoCelsius(32);
+        System.assertEquals(2, celsius,'Nigga fix it 0 haha');
+    }
+    
+
+}

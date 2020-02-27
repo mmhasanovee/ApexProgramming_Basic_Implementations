@@ -1,0 +1,1 @@
+FIND {GenePoint} IN ALL FIELDS RETURNING Account(Name),Contact(FirstName,LastName)

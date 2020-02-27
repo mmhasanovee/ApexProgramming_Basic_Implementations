@@ -1,0 +1,15 @@
+public class Mars {
+    
+    public static void mar(){
+        
+
+		Time myTime = Time.newInstance(7, 14, 55, 4);
+        
+        System.debug('Time is:'+myTime);
+        
+        Time myTime2 = myTime.addHours(10);
+        //addMinutes, addMiliseconds, 
+        System.debug('New time is:'+myTime2);
+    }
+
+}

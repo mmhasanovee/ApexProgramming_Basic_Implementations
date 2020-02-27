@@ -1,0 +1,33 @@
+public class Mars {
+    
+    public static void mar(){
+        
+        String str='i am kidman';
+        integer inn=str.indexOf('kidman');
+        System.debug(inn);
+        //-1 if doesn't appear.
+        String str2=str.capitalize();
+        System.debug(str2); //only first character
+        
+        String str3='';
+        String str4='fghij';
+        
+        Integer result = str3.compareTo(str4);
+        System.debug(result);
+        
+        String s5='Maria';
+        String s6='Wasek';
+        Boolean result2=s5.equals(s6); //also checks cases
+        //equalsIgnoreCase for ignoring the cases.
+        System.debug(result2);
+        
+        System.debug(s5.toUpperCase());
+        //toLowerCase
+        
+        System.debug(s5+' '+s6);
+        System.debug(s5.contains('ovee'));
+        
+        
+    }
+    
+}

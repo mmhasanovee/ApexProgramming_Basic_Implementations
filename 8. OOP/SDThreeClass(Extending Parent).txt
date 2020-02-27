@@ -1,0 +1,7 @@
+public class SDThree extends Employee {
+
+    public override void showAll(){
+        
+        System.debug('This is SDThree mehtod');
+    }
+}

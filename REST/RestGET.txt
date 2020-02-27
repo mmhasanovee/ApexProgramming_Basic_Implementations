@@ -1,0 +1,13 @@
+@RestResource(urlMapping='/Cases/*')
+global with sharing class RestCaseManager {
+@HttpGet
+    global static Case getCaseById(){
+        
+        RestRequest request = RestContext.request;
+       String caseId= request.requestURI.substring(request.requestURI.lastIndexOf('/')+1);
+   		Case result = [Select CaseNumber, Subject, Status, Origin, Priority from Case where Id=:caseId];
+        return result;
+    }
+}
+
+// /services/apexrest/Cases/5002v00002ekK5rAAE at workbench of salesforce

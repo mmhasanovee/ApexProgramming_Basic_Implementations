@@ -1,0 +1,26 @@
+public class AcctUtility {
+    
+    public static void mainProcessing(){
+        try{
+            insertAccount();}
+        catch(CustomException ce){
+            system.debug('Message: '+ce.getMessage());
+            system.debug('Cause: '+ ce.getCause());
+            system.debug('Line number '+ce.getLineNumber());
+            
+        }
+    }
+    
+    public static void insertAccount(){
+        
+        try{
+        Account a = new Account();
+        insert a;
+        }
+        
+        catch(DMLException de){
+            throw new CustomException('requires Name',de);
+        }
+    }
+
+}

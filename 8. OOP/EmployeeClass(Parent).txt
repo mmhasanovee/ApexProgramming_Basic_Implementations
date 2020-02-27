@@ -1,0 +1,24 @@
+public virtual class Employee {
+    
+    public String name;
+    public String desig;
+    
+    public Employee(String n,String s){
+        
+        name=n;
+        desig=s;
+    }
+    
+    public Employee(){
+        
+    }
+    
+    public virtual void showAll(){
+        
+        System.debug('Name is: '+name);
+        System.debug('Desig is:'+desig);
+
+
+}
+
+}

@@ -1,0 +1,27 @@
+public class Mars {
+    
+    public static void mar(){
+        
+       integer num =69;
+        
+        switch on num{
+            
+            when 2,69{
+                
+                system.debug('it is 2');
+            }
+            
+            when 5{
+                
+                system.debug('it is 5');
+            }
+            
+            when else{
+                system.debug('Unknown niggga number');
+            }
+        }
+        
+        
+    }
+    
+}
